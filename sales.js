@@ -1,6 +1,6 @@
 var http = require('http');
 
-books = [
+sales = [
     {
         "id": 1,
         "book": 1,
@@ -12,7 +12,7 @@ books = [
         "date": "2021-12-20"
    }
 ]
-let data = JSON.stringify(books);
+let data = JSON.stringify(sales);
 
 http.createServer(function (_, res) {
     const headers = {
@@ -22,4 +22,4 @@ http.createServer(function (_, res) {
     res.writeHead(200, headers)
     res.write(data); 
     res.end(); 
-}).listen(8100); 
+}).listen(8230); 
